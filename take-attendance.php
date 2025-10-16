@@ -27,7 +27,7 @@
       <div class="space-y">
         <div>
           <button id="backToInstructor" class="link-back">← Back to Dashboard</button>
-          <h2 class="page-title">Calculus II - Attendance for Oct 15, 2025</h2>
+          <h2 class="page-title">ITEL 304 - Attendance for Oct 15, 2025</h2>
           <p class="muted">2:00 PM Session</p>
         </div>
 
@@ -65,7 +65,7 @@
     <div id="finalModal" class="modal" aria-hidden="true">
       <div class="modal-content card">
         <h3 class="page-title">Finalized!</h3>
-        <p class="muted">Attendance for Calculus II has been recorded and parents have been notified.</p>
+        <p class="muted">Attendance for ITEL 304 has been recorded and parents have been notified.</p>
         <div class="modal-actions">
           <button id="closeModal" class="btn primary">OK</button>
         </div>

@@ -247,6 +247,35 @@
   if (backBtn) backBtn.addEventListener('click', () => window.location.href = 'instructor-dashboard.php');
   }
 
+  // Student/Parent: Handle attendance record filters
+  const attendanceRecordsBody = qs('#attendanceRecordsBody');
+  if (attendanceRecordsBody) {
+    const records = Array.from(attendanceRecordsBody.querySelectorAll('tr')).map(row => ({
+      element: row,
+      status: row.querySelector('.badge').textContent.toLowerCase()
+    }));
+
+    // Handle filter clicks
+    qsa('.filter-btn').forEach(btn => {
+      btn.addEventListener('click', (e) => {
+        const filter = e.currentTarget.getAttribute('data-filter');
+        
+        // Update active state
+        qsa('.filter-btn').forEach(b => b.classList.remove('active'));
+        e.currentTarget.classList.add('active');
+
+        // Filter records
+        records.forEach(({ element, status }) => {
+          if (filter === 'all' || status.includes(filter)) {
+            element.style.display = '';
+          } else {
+            element.style.display = 'none';
+          }
+        });
+      });
+    });
+  }
+
   // apply header content on all pages
   applyHeaderInfo();
   // enforce role-based UI visibility (hide nav buttons and other role-specific elements)

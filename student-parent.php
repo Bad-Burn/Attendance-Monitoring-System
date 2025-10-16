@@ -53,10 +53,10 @@
           <div class="stack">
             <div class="card">
               <h3>Grades Summary</h3>
-              <details class="group"><summary>Calculus II <span class="blue">A-</span></summary>
+              <details class="group"><summary>ITEL 304 <span class="blue">A-</span></summary>
                 <div class="muted small mt-2">Midterm: 92%<br/>Assignment 1: 95%</div>
               </details>
-              <details class="group"><summary>Physics 101 <span class="green">A</span></summary></details>
+              <details class="group"><summary>ITST 301 <span class="green">A</span></summary></details>
             </div>
 
             <div class="card">
@@ -64,7 +64,7 @@
               <ul class="timeline">
                 <li class="timeline-item green">
                   <div class="row-between">
-                    <strong>Calculus II</strong>
+                    <strong>ITEL 304</strong>
                     <span class="badge green">PRESENT</span>
                   </div>
                   <div class="muted">Oct 14, 2025</div>
@@ -73,7 +73,7 @@
 
                 <li class="timeline-item red">
                   <div class="row-between">
-                    <strong>Physics 101</strong>
+                    <strong>ITST 301</strong>
                     <span class="badge red">ABSENT</span>
                   </div>
                   <div class="muted">Oct 13, 2025</div>
@@ -81,6 +81,76 @@
                 </li>
               </ul>
             </div>
+          </div>
+        </div>
+
+        <!-- New Attendance Records Section -->
+        <div class="card">
+          <div class="flex-between mb-4">
+            <h3>Detailed Attendance Records</h3>
+            <div class="btn-group">
+              <button class="btn secondary filter-btn active" data-filter="all">All</button>
+              <button class="btn secondary filter-btn" data-filter="present">Present</button>
+              <button class="btn secondary filter-btn" data-filter="late">Late</button>
+              <button class="btn secondary filter-btn" data-filter="absent">Absent</button>
+            </div>
+          </div>
+
+          <div class="table-wrap">
+            <table class="table">
+              <thead>
+                <tr>
+                  <th>Date</th>
+                  <th>Class</th>
+                  <th>Status</th>
+                  <th>Time In</th>
+                  <th>Time Out</th>
+                  <th>Notes</th>
+                </tr>
+              </thead>
+              <tbody id="attendanceRecordsBody">
+                <tr>
+                  <td>Oct 15, 2025</td>
+                  <td>
+                    <div class="text-bold">ITEL 304</div>
+                    <div class="muted">Section B</div>
+                  </td>
+                  <td><span class="badge green">Present</span></td>
+                  <td>2:00 PM</td>
+                  <td>3:30 PM</td>
+                  <td>-</td>
+                </tr>
+                <tr>
+                  <td>Oct 14, 2025</td>
+                  <td>
+                    <div class="text-bold">ITST 301</div>
+                    <div class="muted">Section A</div>
+                  </td>
+                  <td><span class="badge amber">Late</span></td>
+                  <td>2:10 PM</td>
+                  <td>3:30 PM</td>
+                  <td>Traffic delay</td>
+                </tr>
+                <tr>
+                  <td>Oct 13, 2025</td>
+                  <td>
+                    <div class="text-bold">ITEP 309</div>
+                    <div class="muted">Section B</div>
+                  </td>
+                  <td><span class="badge red">Absent</span></td>
+                  <td>-</td>
+                  <td>-</td>
+                  <td>Medical appointment</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+
+          <div class="text-right mt-4 space-x">
+            <span class="muted">Term Summary:</span>
+            <span class="badge green sm">Present: 85%</span>
+            <span class="badge amber sm">Late: 10%</span>
+            <span class="badge red sm">Absent: 5%</span>
           </div>
         </div>
       </div>

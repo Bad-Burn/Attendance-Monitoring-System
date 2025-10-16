@@ -94,7 +94,7 @@
           <div class="card">
             <h3>Activity Feed</h3>
             <ul class="feed">
-              <li><strong>Instructor Smith</strong> updated grades for <span class="highlight">Math 101</span><div class="muted">2 min ago</div></li>
+              <li><strong>Instructor Smith</strong> updated grades for <span class="highlight">ITEL 304</span><div class="muted">2 min ago</div></li>
               <li><strong>New Student User</strong> registered: John Doe.<div class="muted">5 min ago</div></li>
               <li><strong>System Backup</strong> completed successfully.<div class="muted">1 hour ago</div></li>
             </ul>

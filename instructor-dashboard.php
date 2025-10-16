@@ -35,7 +35,7 @@
         <div class="grid-3">
           <div class="card lg-col-2 text-center">
             <p class="muted">Your current class is:</p>
-            <h3 class="big-title">Calculus II (Section B)</h3>
+            <h3 class="big-title">ITEL 304 (Section B)</h3>
             <p class="muted">2:00 PM - 3:30 PM</p>
             <button id="startAttendanceBtn" class="btn primary large mt-6">START ATTENDANCE NOW</button>
           </div>
@@ -59,7 +59,7 @@
           <ul class="list-plain">
             <li class="list-item">
               <div>
-                <strong>Physics 101</strong>
+                <strong>ITST 301</strong>
                 <div class="muted">Section A</div>
               </div>
               <div class="mono">4:00 PM - 5:00 PM</div>
